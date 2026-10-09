@@ -161,7 +161,9 @@
 
 ### **3-1. 서비스 구성도**
 
-<!-- TODO: 발표자료의 구성도 이미지가 있으면 함께 첨부 -->
+<img width="1920" height="1080" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (5)" src="https://github.com/user-attachments/assets/47143c14-1d64-489e-89a6-28ac549e183a" />
+<img width="1920" height="897" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (6)" src="https://github.com/user-attachments/assets/40101d37-e5c1-4524-8a0e-a9306df511d0" />
+
 
 ```mermaid
 flowchart LR
