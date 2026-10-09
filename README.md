@@ -1,4 +1,4 @@
-# 🔔 Hearo — 청각장애인을 위한 가정용 환경음 인식 IoT 알림 시스템
+# Hearo: 청각장애인을 위한 가정용 환경음 인식 IoT 알림 시스템
 
 <img width="1920" height="1080" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (4)" src="https://github.com/user-attachments/assets/0cd940c8-2abe-4643-bd20-36131bc837ce" />
 
