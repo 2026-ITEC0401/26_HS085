@@ -185,13 +185,13 @@ sequenceDiagram
 
     M->>P: 20ms PCM16 프레임 (UDP, HMAC 인증)
     P->>P: 2초 rolling buffer → YAMNet 임베딩 → Hearo 분류
-    alt 표적음 (임계값 이상)
+    alt 표적음 판정 · 임계값 충족 · 쿨다운 통과
         P->>P: 해당 방 LED 점등 (인터넷 없이도 동작)
         P->>S: 분류 결과 발행 (MQTT TLS)
         S->>S: 알림 저장 (DynamoDB)
         S-->>U: alarm.created (WebSocket, 가구 전체)
         U->>U: 전체화면 알림 + 유형별 진동
-    else 비표적음
+    else 비표적음 또는 임계값 미달 또는 쿨다운 중
         P->>P: 알림 없음 (오디오 폐기)
     end
 ```
