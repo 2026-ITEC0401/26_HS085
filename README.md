@@ -152,8 +152,8 @@
 
 | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> |
 | :---: | :---: | :---: | :---: | :---: |
-| **멘티1** | **멘티2** | **멘티3** | **멘티4** | **멘토** |
-| • 프론트엔드 개발<br>• UI/UX 디자인<br>• 웹 배포 자동화 | • 백엔드 개발<br>• AWS 인프라 구축 | • 서비스 기획<br>• 모바일 앱 개발 | • TODO | • 프로젝트 멘토<br>• 기술 자문 |
+| **장원석** | **홍한희** | **한나영** | **정승민** | **박진산** |
+| • 백엔드 개발<br>• .<br>• . | • 프론트엔드 개발<br>• . | • 프론트엔드 개발<br>• . | • 데이터셋 수집 | • 프로젝트 멘토<br>• 기술 자문 |
 
 ---
 
@@ -164,33 +164,6 @@
 <img width="1920" height="1080" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (5)" src="https://github.com/user-attachments/assets/47143c14-1d64-489e-89a6-28ac549e183a" />
 <img width="1920" height="897" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (6)" src="https://github.com/user-attachments/assets/40101d37-e5c1-4524-8a0e-a9306df511d0" />
 
-
-```mermaid
-flowchart LR
-    subgraph Home["🏠 가정 (LAN)"]
-        E1["ESP32 · 안방<br/>INMP441 + LED"]
-        E2["ESP32 · 현관<br/>INMP441 + LED"]
-        E3["ESP32 · 화장실<br/>INMP441 + LED"]
-        RPI["Raspberry Pi 4 · 거실<br/>마이크 수집 + YAMNet 추론 + LED"]
-        E1 -- "UDP PCM16 · HMAC" --> RPI
-        E2 -- "UDP PCM16 · HMAC" --> RPI
-        E3 -- "UDP PCM16 · HMAC" --> RPI
-    end
-
-    subgraph AWS["☁️ AWS"]
-        MQ["MQTT Broker<br/>TLS 8883"]
-        API["FastAPI · EC2<br/>REST + WebSocket"]
-        DB[("DynamoDB")]
-        CF["S3 + CloudFront"]
-        MQ --> API --> DB
-    end
-
-    RPI -- "분류 결과만 전송 (MQTT TLS)" --> MQ
-    API -- "WebSocket 실시간 알림" --> USER["📱 Hearo 앱 / 웹"]
-    USER -- "REST · JWT" --> API
-    CF -- "웹 배포" --> USER
-```
-
 ### **3-2. H/W 구성**
 
 | 기기 ID | 설치 위치 | 역할 |
@@ -199,8 +172,6 @@ flowchart LR
 | `esp32_1` | 안방 | INMP441 수집 → 라즈베리파이로 로컬 전송, LED |
 | `esp32_2` | 현관 | INMP441 수집 → 라즈베리파이로 로컬 전송, LED |
 | `esp32_3` | 화장실 | INMP441 수집 → 라즈베리파이로 로컬 전송, LED |
-
-<!-- TODO: 실제 설치 기기 사진 (라즈베리파이 + USB 마이크, ESP32 노드) -->
 
 ### **3-3. 소리 감지 → 알림 흐름**
 
