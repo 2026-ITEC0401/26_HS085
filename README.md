@@ -161,8 +161,8 @@
 
 ### **3-1. 서비스 구성도**
 
-<img width="1920" height="1080" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (5)" src="https://github.com/user-attachments/assets/47143c14-1d64-489e-89a6-28ac549e183a" />
-<img width="1920" height="897" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (6)" src="https://github.com/user-attachments/assets/40101d37-e5c1-4524-8a0e-a9306df511d0" />
+<img width="1920" height="929" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (5)" src="https://github.com/user-attachments/assets/93ae0afb-0588-4856-960f-3ffb1cb2066d" />
+<img width="1920" height="724" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (6)" src="https://github.com/user-attachments/assets/e9ca09a8-8c3b-4b52-a90f-cca913fdc5ae" />
 
 ### **3-2. H/W 구성**
 
