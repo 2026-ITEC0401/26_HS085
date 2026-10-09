@@ -245,14 +245,15 @@ sequenceDiagram
 
 ## **💡4. 작품 소개영상**
 
-<!-- TODO: 유튜브 썸네일·링크로 교체 -->
-[![Hearo 작품 소개영상](유튜브 썸네일 URL)](유튜브 영상 URL)
+https://www.youtube.com/watch?v=7a42_7KuAz0
 
 ---
 
 ## **💡5. 핵심 소스코드**
 
-### **5-1. 유형별 전체화면 알림과 진동 패턴** — [`frontend/.../FullScreenAlert.tsx`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/components/FullScreenAlert.tsx) · [`app/.../full-screen-alert.tsx`](https://github.com/2026-ITEC0401/app/blob/develop/src/components/alert/full-screen-alert.tsx)
+### **5-1. 유형별 전체화면 알림과 진동 패턴**
+[`frontend/.../FullScreenAlert.tsx`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/components/FullScreenAlert.tsx)
+[`app/.../full-screen-alert.tsx`](https://github.com/2026-ITEC0401/app/blob/develop/src/components/alert/full-screen-alert.tsx)
 
 청각장애인은 알림음을 들을 수 없고, 고령 사용자는 작은 배너를 놓치기 쉽습니다. 그래서 소리가 감지되면 **화면 전체를 유형별 색으로 덮고**, **진동 패턴을 유형마다 다르게** 해 화면을 보지 않아도 손끝으로 소리 종류를 구분할 수 있게 했습니다. 웹은 Web Vibration API, 앱은 React Native `Vibration`으로 **같은 패턴**을 사용합니다.
 
@@ -281,7 +282,9 @@ useEffect(() => {
 }, [config]);
 ```
 
-### **5-2. 권한별 긴급 대응 — 119 문자 신고 자동 작성** — [`frontend/src/constants/emergency.ts`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/constants/emergency.ts) · [`EmergencyActions.tsx`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/components/EmergencyActions.tsx)
+### **5-2. 권한별 긴급 대응 — 119 문자 신고 자동 작성**
+[`frontend/src/constants/emergency.ts`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/constants/emergency.ts)
+[`EmergencyActions.tsx`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/components/EmergencyActions.tsx)
 
 청각장애인은 119에 음성 전화를 걸기 어렵습니다. 비상벨이 감지되면 **등록된 주소와 감지 시각이 미리 채워진 신고 문자**를 버튼 한 번으로 보낼 수 있게 했습니다. 문자앱을 여는 `sms:` 방식을 택해 통신사 문자 신고 경로를 그대로 사용합니다.
 
@@ -305,7 +308,8 @@ export function buildReportBody(address: EmergencyAddress, stamp: string, sound:
 }
 ```
 
-### **5-3. 실시간 알림 수신 (WebSocket)** — [`frontend/src/lib/ws.ts`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/lib/ws.ts)
+### **5-3. 실시간 알림 수신 (WebSocket)**
+[`frontend/src/lib/ws.ts`](https://github.com/2026-ITEC0401/frontend/blob/develop/src/lib/ws.ts)
 
 가구 단위 채널에 접속해 토큰으로 인증한 뒤, 메시지 타입별로 신규 알림·기기 목록·기기 상태 변경을 분기합니다. 알 수 없는 타입이나 손상된 프레임은 무시해 **알림 화면이 오류로 멈추지 않도록** 했습니다.
 
@@ -338,7 +342,8 @@ export function connectWs(
 }
 ```
 
-### **5-4. 앱 실시간 소켓 — 백그라운드 복귀 재연결과 캐시 동기화** — [`app/src/hooks/use-household-socket.ts`](https://github.com/2026-ITEC0401/app/blob/develop/src/hooks/use-household-socket.ts)
+### **5-4. 앱 실시간 소켓 — 백그라운드 복귀 재연결과 캐시 동기화**
+[`app/src/hooks/use-household-socket.ts`](https://github.com/2026-ITEC0401/app/blob/develop/src/hooks/use-household-socket.ts)
 
 웹을 앱으로 옮기면서 두 가지를 개선했습니다. 첫째, 웹은 화면마다 소켓을 열었지만 앱은 **항상 마운트된 홈 탭에서 하나만 열고**, 받은 기기 상태를 TanStack Query 캐시에 써넣어 모든 화면이 같은 데이터를 봅니다. 둘째, 모바일 OS는 **백그라운드에서 소켓을 끊을 수 있어** 앱이 다시 활성화되면 닫힌 소켓을 자동으로 다시 엽니다. 같은 알림을 중복 수신해도 미확인 개수는 한 번만 올라갑니다.
 
@@ -369,7 +374,8 @@ const subscription = AppState.addEventListener("change", (state) => {
 });
 ```
 
-### **5-5. ESP32 ↔ 라즈베리파이 오디오 인증 프로토콜** — [`raspberry-pi/hearo_audio_protocol.py`](https://github.com/2026-ITEC0401/raspberry-pi/blob/main/hearo_audio_protocol.py)
+### **5-5. ESP32 ↔ 라즈베리파이 오디오 인증 프로토콜**
+[`raspberry-pi/hearo_audio_protocol.py`](https://github.com/2026-ITEC0401/raspberry-pi/blob/main/hearo_audio_protocol.py)
 
 집 안의 소리가 외부로 나가지 않도록 오디오는 **같은 LAN의 라즈베리파이로만** 보냅니다. 같은 네트워크의 다른 기기가 가짜 소리를 주입해 오알림을 일으키지 못하도록, 20ms 프레임마다 **CRC32(손상 검출)와 HMAC-SHA256(기기 인증)**을 검증합니다.
 
@@ -416,11 +422,4 @@ def decode_audio_packet(datagram: bytes, pre_shared_key: str | bytes) -> AudioPa
 | 프로토타입(Firebase)의 확장 한계 | FastAPI + DynamoDB + WebSocket 기반 AWS 아키텍처로 전환 |
 | 프론트엔드 유지보수성 | JavaScript → TypeScript 전면 마이그레이션, 디자인 토큰 체계화, GitHub Actions로 S3·CloudFront 자동 배포 |
 | 웹을 앱으로 옮길 때의 실시간 연결 문제 | 소켓을 하나로 통합하고 TanStack Query 캐시로 공유, 백그라운드 복귀 시 자동 재연결 |
-| 스토어 출시 요건 | 패키지명·아이콘·스플래시 확정, EAS 빌드 설정, 약관·개인정보 처리방침·오픈소스 고지 화면 구현 |
 
----
-
-## **🏆 수상 및 성과**
-
-- 2026.06 한국정보기술학회 하계종합학술대회 대학생 논문경진대회 **동상**
-- 2026 한이음 ICT 멘토링 **우수 프로젝트 선정**
