@@ -43,13 +43,13 @@
 
 - 2025년 말 등록장애인은 약 262.8만 명이며, 이 중 **청각장애가 17.1%(약 45만 명)로 지체장애 다음으로 많습니다.**
 - 전체 등록장애인의 **56.9%가 65세 이상**이고, 최근 1년간 새로 등록한 65세 이상 장애인의 **46.3%가 청각장애**였습니다.
-- 즉 사용자 상당수는 **시력·인지 기능도 함께 저하된 고령층**이며, 알림은 "보이기만 하는 것"이 아니라 **크고, 분명하고, 잘못 누르기 어려워야** 합니다.
+- 즉 사용자 상당수는 **시력·인지 기능도 함께 저하된 고령층**이며, 알림은 "보이기만 하는 것"이 아니라 **크고, 분명하고, 인지하기 쉬워야** 합니다.
 
 > 출처 : 보건복지부 「2025년도 등록장애인 현황」
 
 **② 위험을 알리는 소리는 대부분 '소리'로만 전달됩니다.**
 
-- 화재경보기, 도어락, 노크, 아기 울음은 모두 청각 신호에 의존합니다. 청각장애인에게는 **경보를 놓치는 것이 곧 대피 지연**으로 이어집니다.
+- 긴급상황 시 알림, 화재 경보기 모두 청각 신호에 의존합니다. 청각장애인에게는 **경보를 놓치는 것이 곧 대피 지연**으로 이어집니다.
 - 지자체·소방서에서 시각 경보형 감지기를 보급하고 있지만, **화재 한 가지 상황**에 한정되고 설치된 공간에서만 동작합니다.
 
 **③ 기존 대안은 '한 공간, 한 종류'의 소리만 다룹니다.**
@@ -106,9 +106,26 @@
 <!--
 | <img width="180" src="메인화면URL" /> | <img width="180" src="전체화면알림URL" /> | <img width="180" src="알림이력URL" /> | <img width="180" src="긴급대응URL" /> |
 | :---: | :---: | :---: | :---: |
-| 메인 · 방별 기기 현황 | 전체화면 알림 | 7일 알림 이력 | 119 · 가족 연락 |
+| 메인 · 방별 기기 현황 | 전체화면 알림 | 7일 알림 이력 | 119 · 가족 연락 |<img width="731" height="1300" alt="screenshot_02_urgent" src="https://github.com/user-attachments/assets/d853065e-d78e-44c8-b504-f4195dae4a2b" />
+
 -->
 
+<table>
+  <tr>
+    <td align="center"><img width="200" alt="메인 화면" src="https://github.com/user-attachments/assets/c4f49dde-68c7-4a67-950d-606dea3e9b1e" /></td>
+    <td align="center"><img width="200" alt="전체화면 알림" src="https://github.com/user-attachments/assets/a45bcf6f-9047-430c-82a5-3128bcb7e538" /></td>
+    <td align="center"><img width="200" alt="알림 이력" src="https://github.com/user-attachments/assets/25f5077c-9c7c-44dc-ad11-6f8056061c8a" /></td>
+    <td align="center"><img width="200" alt="긴급 신고" src="https://github.com/user-attachments/assets/52769599-a92c-4b35-9caa-7e0939608424" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>메인 · 방별 기기 현황</b></td>
+    <td align="center"><b>전체화면 알림</b></td>
+    <td align="center"><b>7일 알림 이력</b></td>
+    <td align="center"><b>119 · 가족 연락</b></td>
+  </tr>
+</table>
+
+<br>
 **IoT 기기**
 
 | 기능 | 설명 |
@@ -152,10 +169,10 @@
 
 <!-- TODO: 프로필 이미지 URL 교체 (이름 기재 X) -->
 
-| <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> |
+| <img width="120" src="https://github.com/user-attachments/assets/fead2cb6-692e-457c-9fa4-351391aa956d" /> | <img width="120" src="https://github.com/user-attachments/assets/1c7455b0-2183-4500-a232-3e0e140b2e19" /> | <img width="120" src="https://github.com/user-attachments/assets/cdb0a8ea-5f6a-45a8-be65-6756f841a7e1" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> |
 | :---: | :---: | :---: | :---: | :---: |
 | **장원석** | **홍한희** | **한나영** | **정승민** | **박진산** |
-| • 백엔드 개발<br>• .<br>• . | • 프론트엔드 개발<br>• . | • 프론트엔드 개발<br>• . | • 데이터셋 수집 | • 프로젝트 멘토<br>• 기술 자문 |
+| • 백엔드 개발<br>• 서버관리<br> | • 프론트엔드 개발<br>• UI/UX 설계 | • 프론트엔드 개발<br>• APP 설계 | • 프로젝트 관리<br>• 환경음 데이터 수집 •  | • 프로젝트 멘토<br>• 기술 자문 |
 
 ---
 
