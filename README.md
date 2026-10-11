@@ -35,7 +35,7 @@
 
 <img width="1920" height="817" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (7)" src="https://github.com/user-attachments/assets/b5580de3-00c5-44a0-a021-0111315a8150" />
 
-### 사진 설명: Hub - Node 소리 수집 → 비상벨 소리 판별 -→ App 알림
+<p align="center"><sub>허브·노드가 소리를 수집 → 비상벨 소리 판별 → 앱 알림</sub></p>
 
 ### **1-2. 개발 배경 및 필요성**
 
