@@ -256,7 +256,14 @@ sequenceDiagram
 
 ## **4. 작품 소개영상**
 
-[![Hearo 작품 소개영상](https://img.youtube.com/vi/7a42_7KuAz0/maxresdefault.jpg)](https://www.youtube.com/watch?v=7a42_7KuAz0)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=7a42_7KuAz0">
+    <img width="80%" src="https://img.youtube.com/vi/7a42_7KuAz0/maxresdefault.jpg" alt="Hearo 작품 소개영상" />
+  </a>
+</p>
+<p align="center">
+  이미지를 클릭하면 YouTube에서 시연 영상을 볼 수 있습니다. <a href="https://www.youtube.com/watch?v=7a42_7KuAz0">(영상 바로가기)</a>
+</p>
 
 ---
 
