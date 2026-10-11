@@ -161,10 +161,11 @@
 
 ## **2. 팀원 소개**
 
-| <img width="120" src="https://github.com/user-attachments/assets/fead2cb6-692e-457c-9fa4-351391aa956d" /> | <img width="120" src="https://github.com/user-attachments/assets/1c7455b0-2183-4500-a232-3e0e140b2e19" /> | <img width="120" src="https://github.com/user-attachments/assets/cdb0a8ea-5f6a-45a8-be65-6756f841a7e1" /> | <img width="120" src="프로필이미지URL" /> | <img width="120" src="프로필이미지URL" /> |
+| <img width="120" src="https://github.com/user-attachments/assets/fead2cb6-692e-457c-9fa4-351391aa956d" /> | <img width="120" src="https://github.com/user-attachments/assets/1c7455b0-2183-4500-a232-3e0e140b2e19" /> | <img width="120" src="https://github.com/user-attachments/assets/cdb0a8ea-5f6a-45a8-be65-6756f841a7e1" /> | <img width="120" src="https://github.com/user-attachments/assets/efe43d6b-e1c4-40a5-af37-1ad2bb0db580" /> | <img width="120" src="프로필이미지URL" /> |
 | :---: | :---: | :---: | :---: | :---: |
 | **멘티1** | **멘티2** | **멘티3** | **멘티4** | **멘토** |
 | • 백엔드 개발<br>• 서버관리 | • 프론트엔드 개발<br>• UI/UX 설계 | • 프론트엔드 개발<br>• APP 설계 | • 프로젝트 관리<br>• 환경음 데이터 수집 | • 프로젝트 멘토<br>• 기술 자문 |
+
 
 ---
 
