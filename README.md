@@ -2,6 +2,7 @@
 
 <img width="1920" height="1080" alt="HEARO_ 청각 장애인을 위한 IoT 알림 시스템 (4)" src="https://github.com/user-attachments/assets/0cd940c8-2abe-4643-bd20-36131bc837ce" />
 <h2 align="center">🏆 2026 한이음 드림업 공모전 금상 🏆</h2>
+
 ### **"들리지 않아도, 놓치지 않도록."**
 집 안의 비상벨·도어락·소음 소리를 엣지 AI가 인식해, 방별 LED와 스마트폰 알림·진동으로 즉시 전달하고 119 문자 신고까지 한 번에 연결합니다.
 
